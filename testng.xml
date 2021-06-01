@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!--  parallel testing at test suite level --> 
+<suite name="Suite" parallel="tests" thread-count="2">
+  <test  name="parallel test">
+    <classes>
+      <class name="paralleltesting.ParallelTest1"/>
+    </classes>
+  </test>
+  <test  name="parallel test2">
+    <classes>
+     <class name="paralleltesting.ParallelTest2"/>
+    </classes>
+  </test>
+</suite>  
+
+<!--  parallel testing at classes level 
+<suite name="Suite" parallel="classes" thread-count="2">
+  <test  name="parallel test">
+    <classes>
+      <class name="paralleltesting.ParallelTest1"/>
+      <class name="paralleltesting.ParallelTest2"/>
+    </classes>
+  </test>
+</suite> -->  
+
+<!--  parallel testing at method level
+<suite name="Suite" parallel="methods" thread-count="2">
+  <test  name="parallel test">
+    <classes>
+      <class name="paralleltesting.ParallelTest1">
+     </class>
+    </classes>
+  </test>
+</suite>   -->
+      
+<!--   for parameterisation  test 
+<suite name="Suite">
+<test name="Parameter Test">
+<parameter name="browser" value="chrome"></parameter>
+<parameter name="url" value="https://www.seleniumeasy.com/test/"></parameter>
+    <classes>
+      <class name="annotations.ParametersExample"/>
+      </classes>
+      </test>    
+      <test name="Parameter Test2">
+<parameter name="browser" value="edge"></parameter>
+<parameter name="url" value="https://www.seleniumeasy.com/test/"></parameter>
+    <classes>
+      <class name="annotations.ParametersExample"/>
+      </classes>
+      </test>
+</suite>-->
+
+<!--   for Annotaions  test
+<suite name="Suite">
+  <test thread-count="5" name="Annotations Test">
+    <classes>
+      <class name="annotations.Annotations2">
+      <methods>
+      <include name="test3"></include>
+      <include name="test4"></include>
+      </methods>
+      </class>
+      <class name="annotations.Annotations">
+      <methods>
+      <include name="test1"></include>
+      <include name="test2"></include>
+      </methods>
+      </class>
+    </classes>
+  </test> 
+</suite> 
+-->
+
+<!--  for grouping Example  -->
+ <!-- <suite name="Suite">
+  <test thread-count="5" name="Grouping Test">
+  <groups>
+ 	 <run>
+  		<include name="Sanity"></include>
+  		<include name="Regression"></include>  
+  		-->
+  		<!-- to exclude we can use this  <exclude name="Sanity"></exclude> 
+  	</run>
+  </groups>
+    <classes>
+      <class name="annotations.GroupingExample"/>
+    </classes>
+  </test> 
+</suite> -->

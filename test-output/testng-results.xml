@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="66401" started-at="2021-06-02T00:06:45 IST" finished-at="2021-06-02T00:07:51 IST">
+    <groups>
+    </groups>
+    <test name="parallel test2" duration-ms="60066" started-at="2021-06-02T00:06:45 IST" finished-at="2021-06-02T00:07:45 IST">
+      <class name="paralleltesting.ParallelTest2">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:paralleltesting.ParallelTest2@1817d444]" name="beforeTest" is-config="true" duration-ms="29504" started-at="2021-06-02T00:06:45 IST" finished-at="2021-06-02T00:07:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="textVerification()[pri:1, instance:paralleltesting.ParallelTest2@1817d444]" name="textVerification" duration-ms="19019" started-at="2021-06-02T00:07:14 IST" finished-at="2021-06-02T00:07:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- textVerification -->
+        <test-method status="FAIL" signature="additionVerification()[pri:2, instance:paralleltesting.ParallelTest2@1817d444]" name="additionVerification" duration-ms="9698" started-at="2021-06-02T00:07:34 IST" finished-at="2021-06-02T00:07:44 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Total verification = pass expected [210] but found [210]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Total verification = pass expected [210] but found [210]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at paralleltesting.ParallelTest2.additionVerification(ParallelTest2.java:77)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- additionVerification -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:paralleltesting.ParallelTest2@1817d444]" name="afterTest" is-config="true" duration-ms="901" started-at="2021-06-02T00:07:44 IST" finished-at="2021-06-02T00:07:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- paralleltesting.ParallelTest2 -->
+    </test> <!-- parallel test2 -->
+    <test name="parallel test" duration-ms="66401" started-at="2021-06-02T00:06:45 IST" finished-at="2021-06-02T00:07:51 IST">
+      <class name="paralleltesting.ParallelTest1">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:paralleltesting.ParallelTest1@4a22f9e2]" name="beforeClass" is-config="true" duration-ms="59451" started-at="2021-06-02T00:06:45 IST" finished-at="2021-06-02T00:07:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="urlVerification()[pri:1, instance:paralleltesting.ParallelTest1@4a22f9e2]" name="urlVerification" duration-ms="5035" started-at="2021-06-02T00:07:44 IST" finished-at="2021-06-02T00:07:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlVerification -->
+        <test-method status="PASS" signature="titleVerification()[pri:2, instance:paralleltesting.ParallelTest1@4a22f9e2]" name="titleVerification" duration-ms="106" started-at="2021-06-02T00:07:49 IST" finished-at="2021-06-02T00:07:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleVerification -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:paralleltesting.ParallelTest1@4a22f9e2]" name="afterMethod" is-config="true" duration-ms="1631" started-at="2021-06-02T00:07:49 IST" finished-at="2021-06-02T00:07:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- paralleltesting.ParallelTest1 -->
+    </test> <!-- parallel test -->
+  </suite> <!-- Suite -->
+</testng-results>
